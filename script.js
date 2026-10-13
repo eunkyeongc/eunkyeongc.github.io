@@ -5,20 +5,27 @@ const records = {
   education: [
     {title:"빅데이터 분석 플랫폼 개발자 양성과정 수료", org:"코리아에이아이(AI)아카데미학원", date:"2026.05.07~2026.10.22", file:null},
     {title:"컴퓨터공학과 졸업, 공학사", org:"계명대학교", date:"2023", file:null},
-    {title:"영어영문학과 졸업, 문학사", org:"한국방송통신대학교", date:"2022", file:null},
+    {title:"영어영문학과 졸업, 문학사", org:"한국방송통신대학교", date:"2006.03.01.-2009.02.25.", file:"documents/졸업증명서_방송대_영어영문학과.JPG"},
     {title:"청소년교육학과 졸업, 교육사", org:"한국방송통신대학교", date:"2021", file:null},
     {title:"사회복지학과 졸업", org:"한국방송통신대학교", date:"2022", file:null}
   ],
-  career: [],
+  career: [
+    {title:"정보컴퓨터교사, 1학년 담임", org:"영천전자고등학교", date:"2025.03.02.-2026.02.28.", file:null},
+    {title:"정보화마을관리자", org:"보현산별빛포도정보화마을", date:"2014.01.01.-2020.12.31.", file:null},
+    {title:"컴퓨터교육, 우즈베키스탄 동방대학교", org:"국제협력단(KOICA) 해외봉사단", date:"2001-2003", file:null},
+    {title:"컴퓨터교육, 카메룬 도시개발부", org:"국제협력단(KOICA) 해외봉사단", date:"2004-2005", file:null},
+  ],
   certificates: [
-    {title:"빅데이터분석기사 필기 합격", org:"한국데이터산업진흥원", date:"2026.09.23", file:null},
-    {title:"정보처리기사", org:"산업인력관리공단", date:"2024", file:null},
+    
     {title:"중등 2급 정교사(전자계산)", org:"교육부", date:"2024", file:null},
     {title:"사회복지사 2급", org:"", date:"2021", file:null},
     {title:"청소년지도사 2급", org:"", date:"2020", file:null},
     {title:"한국어교원 3급", org:"", date:"2020", file:null}
   ],
-  volunteer: []
+  volunteer: [
+    {title:"선수촌 러시아어 통역", org:"세계유니버시아드대회", date:"2026.09.23", file:null},
+    {title:"사무업무 보조", org:"세계육상선수권대회", date:"2026.09.23", file:null},
+  ]
 };
 
 const works = document.getElementById('works');
