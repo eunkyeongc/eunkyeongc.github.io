@@ -5,9 +5,9 @@ const records = {
   education: [
     {title:"빅데이터 분석 플랫폼 개발자 양성과정 수료", org:"코리아에이아이(AI)아카데미학원", date:"2026.05.07~2026.10.22", file:null},
     {title:"컴퓨터공학과 졸업, 공학사", org:"계명대학교", date:"2023", file:null},
-    {title:"영어영문학과 졸업, 문학사", org:"한국방송통신대학교", date:"2006.03.01.-2009.02.25.", file:"graduation_certificate_english_literature.pdf"},
-    {title:"청소년교육학과 졸업, 교육사", org:"한국방송통신대학교", date:"2021", file:"졸업증명서_방송대_청소년교육학과.JPG"},
-    {title:"사회복지학과 졸업", org:"한국방송통신대학교", date:"2022", file:"졸업증명서_방송대_사회복지학과.JPG"}
+    {title:"영어영문학과 졸업, 문학사", org:"한국방송통신대학교", date:"2006.03.01.-2009.02.25.", file:"졸업증명서_방송대_영어영문학과.JPG"},
+    {title:"청소년교육학과 졸업, 교육학사", org:"한국방송통신대학교", date:"2015.03.01.-2018.02.21.", file:"졸업증명서_방송대_청소년교육학과.JPG"},
+    {title:"사회복지학과 졸업, 사회복지학사", org:"한국방송통신대학교", date:"2022.03.01.-2024.02.20.", file:"졸업증명서_방송대_사회복지학과.JPG"}
   ],
   career: [
     {title:"정보컴퓨터교사, 1학년 담임", org:"영천전자고등학교", date:"2025.03.02.-2026.02.28.", file:null},
@@ -52,7 +52,7 @@ function render(category) {
     }
     const proof = document.createElement('div');
     proof.className = 'proof';
-    if (item.file && /^[a-zA-Z0-9가-힣_.-]+\.pdf$/i.test(item.file) && !item.file.includes('..')) {
+    if (item.file && /^[a-zA-Z0-9가-힣_.-]+\.(pdf|jpg|jpeg|png)$/i.test(item.file) && !item.file.includes('..')) {
       const link = document.createElement('a');
       link.href = 'documents/' + encodeURIComponent(item.file);
       link.target = '_blank';
