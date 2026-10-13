@@ -34,3 +34,15 @@
   #work-panel .work-header,
   #work-panel .work { min-width: 620px; }
 }
+
+/* Updated placement: portrait beside headline; artwork fills sidebar */
+.hero-header {display:flex;align-items:flex-start;justify-content:space-between;gap:clamp(10px,1.5vw,24px);width:100%;min-width:0;margin-bottom:26px;}
+.hero-header h1 {flex:1 1 auto;min-width:0;font-size:clamp(85px,13.5vw,155px);line-height:.73;letter-spacing:-.075em;white-space:nowrap;margin:3px 0 0;}
+.hero-profile {display:block;flex:0 0 auto;width:clamp(92px,9vw,145px);height:clamp(118px,11.5vw,185px);object-fit:cover;object-position:center top;}
+.sidebar-art {width:100%;margin-top:65px;}
+.sidebar-art img {display:block;width:100%;height:auto;object-fit:contain;}
+@media(max-width:1100px) and (min-width:651px) {.hero-header h1 {font-size:clamp(80px,13vw,120px)}.hero-profile {width:clamp(78px,8vw,105px);height:clamp(102px,10vw,136px)}}
+@media(max-width:650px) {.hero-header {gap:10px;margin-bottom:20px}.hero-header h1 {font-size:clamp(52px,14vw,90px)}.hero-profile {width:75px;height:96px}.sidebar-art {margin-top:25px}}
+
+/* Restore the original large headline font at wide desktop sizes. */
+@media(min-width:1100px){.hero-header h1{font-size:clamp(155px,13vw,220px)}}
