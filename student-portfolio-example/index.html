@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Python과 FastAPI로 데이터 서비스를 만드는 주니어 개발자 푸바오의 포트폴리오">
+  <title>푸바오 | AI 개발자 포트폴리오</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23202020'/%3E%3Cpath d='M20 45V19h25v7H28v4h14v7H28v8z' fill='%23ff682c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="처음으로">FUBAO.DEV</a>
+    <nav aria-label="주요 메뉴">
+      <a href="#projects">프로젝트</a>
+      <a href="#about">역량</a>
+      <a href="#contact">연락처</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">AI Backend · Python / FastAPI</p>
+        <h1 id="hero-title"><span class="hero-line plain">데이터를 정리하고,</span><br><span class="hero-line">API로 연결합니다.</span></h1>
+        <p class="hero-summary">Python으로 데이터를 정리하고 FastAPI로 API를 만드는 공부를 하고 있습니다. 팀 프로젝트에서는 전처리와 백엔드 구현을 주로 맡았습니다.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">대표 프로젝트 보기</a>
+          <a class="button secondary" href="resume.pdf" target="_blank" rel="noopener">이력서 보기</a>
+        </div>
+      </div>
+
+      <aside class="snapshot" aria-label="핵심 역량 요약">
+        <p class="snapshot-label">프로필 요약</p>
+        <dl>
+          <div><dt>관심 직무</dt><dd>AI 백엔드</dd></div>
+          <div><dt>주요 기술</dt><dd>Python · FastAPI</dd></div>
+          <div><dt>대표 경험</dt><dd>팀 프로젝트 4회</dd></div>
+          <div><dt>강점</dt><dd>실험과 개선</dd></div>
+        </dl>
+        <div class="availability"><span aria-hidden="true"></span> 2027년 2월 졸업 예정</div>
+      </aside>
+    </section>
+
+    <section class="metrics" aria-label="포트폴리오 주요 수치">
+      <article><strong>3</strong><span>대표 프로젝트</span></article>
+      <article><strong>12</strong><span>자동화 테스트</span></article>
+      <article><strong>35%</strong><span>응답 시간 개선</span></article>
+      <article><strong>84%</strong><span>최고 예측 정확도</span></article>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PROJECTS</p>
+          <h2 id="projects-title">대표 프로젝트</h2>
+        </div>
+        <p>수업과 팀 프로젝트에서 제가 직접 맡은 작업을 정리했습니다.</p>
+      </div>
+
+      <article class="project-card featured">
+        <figure class="project-visual shot wide">
+          <img src="images/project-1.png" alt="지하철 혼잡도 예측 대시보드 화면: 시간대별 혼잡도 막대그래프와 예측값 84%" width="640" height="400" loading="lazy">
+        </figure>
+        <div class="project-copy">
+          <div class="project-number">01 · AI SERVICE</div>
+          <h3>지하철 혼잡도 예측 서비스</h3>
+          <p class="project-lead">시간대와 날씨 데이터를 이용해 역별 혼잡도를 예측하고, 결과를 API와 대시보드로 제공했습니다.</p>
+          <ul class="impact-list">
+            <li><strong>문제</strong><span>결측치와 노선별 데이터 편차로 모델 성능 저하</span></li>
+            <li><strong>기여</strong><span>전처리 파이프라인, 예측 모델, FastAPI 구현</span></li>
+            <li><strong>결과</strong><span>정확도 72% → 84%, API 응답 35% 개선</span></li>
+          </ul>
+          <div class="tags" aria-label="사용 기술"><span>Python</span><span>FastAPI</span><span>Scikit-learn</span><span>Docker</span></div>
+          <details>
+            <summary>해결 과정 자세히 보기</summary>
+            <p>전체 평균으로 처리하던 결측치를 노선과 시간대별 중앙값으로 보정했습니다. 이후 전처리 코드를 함수로 분리하고 테스트를 추가해 학습과 API 예측에서 같은 변환이 적용되도록 만들었습니다.</p>
+          </details>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card compact">
+          <figure class="project-visual shot std">
+          <img src="images/project-2.png" alt="학습 패턴 분석 서비스 화면: 학습 달성도 링 그래프 78" width="640" height="360" loading="lazy">
+        </figure>
+        <div class="project-copy">
+            <div class="project-number">02 · DATA PRODUCT</div>
+            <h3>학습 패턴 분석 서비스</h3>
+            <p>학습 기록을 분석해 취약 단원과 다음 학습 행동을 제안하는 대시보드입니다.</p>
+            <p class="one-line-impact"><strong>내 기여</strong> 데이터 모델링 · 추천 규칙 · 시각화</p>
+            <div class="tags"><span>Pandas</span><span>Streamlit</span><span>SQLite</span></div>
+          </div>
+        </article>
+
+        <article class="project-card compact">
+          <figure class="project-visual shot std">
+          <img src="images/project-3.png" alt="리뷰 감성 분류 API 응답 화면: POST /predict 200 OK" width="640" height="360" loading="lazy">
+        </figure>
+        <div class="project-copy">
+            <div class="project-number">03 · NLP API</div>
+            <h3>리뷰 감성 분류 API</h3>
+            <p>한국어 리뷰의 감성을 분류하고 요청 기록을 모니터링하는 REST API입니다.</p>
+            <p class="one-line-impact"><strong>내 기여</strong> 모델 서빙 · 예외 처리 · API 테스트</p>
+            <div class="tags"><span>PyTorch</span><span>FastAPI</span><span>Pytest</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPERIENCE</p><h2 id="about-title">제가 맡았던 일</h2></div>
+        <p>기술 이름만 나열하지 않고 어디서 어떻게 사용했는지 적었습니다.</p>
+      </div>
+      <div class="capability-grid">
+        <article><span>01</span><h3>분석과 모델링</h3><p>Pandas로 탐색과 전처리를 수행하고, 검증 지표를 기준으로 모델을 비교합니다.</p><small>근거 프로젝트 · 지하철 혼잡도 예측</small></article>
+        <article><span>02</span><h3>API와 데이터베이스</h3><p>FastAPI로 REST API를 설계하고, SQL 데이터 모델과 예외 처리를 구현합니다.</p><small>근거 프로젝트 · 리뷰 감성 분류 API</small></article>
+        <article><span>03</span><h3>협업과 품질</h3><p>이슈와 PR 단위로 작업하고, README와 테스트를 통해 다른 사람이 재현할 수 있게 합니다.</p><small>근거 경험 · 4인 팀 프로젝트</small></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">CONTACT</p>
+      <h2 id="contact-title">AI 백엔드 개발자로<br>첫걸음을 준비하고 있습니다.</h2>
+      <p>현재 인턴십 또는 신입 기회를 찾고 있습니다. 궁금한 점이 있다면 편하게 연락해 주세요.</p>
+      <div class="contact-links">
+        <a href="mailto:fubao@example.com">fubao@example.com</a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Fubao</span><a href="#top">맨 위로</a></footer>
+  <!-- 캡처 이미지는 images 폴더의 파일을 같은 이름으로 바꿔 넣으면 됩니다. 파일명은 영문 소문자·숫자, 가로 1200px 이하, 500KB 이하를 권장합니다. -->
+</body>
+</html>
